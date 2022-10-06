@@ -73,6 +73,16 @@
                 echo"<br>No has elegido ningún plato";
             }
         }
+
+        //
+        if (isset($_GET["envio"])) {
+            $ip = $_GET["ip"];
+            if(!empty($ip)) {
+                echo"<br>La ip del servidor es: " . $ip;
+            }else{
+                echo"<br>No se ha podido averiguar la ip del server";
+            }
+        }
     ?>
 </body>
 </html>
