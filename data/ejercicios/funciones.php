@@ -34,7 +34,7 @@
     // Paso de parámetros por valor o por referencia (variable) OPCIONAL
     function restar(&$var3, $var4) {
         $var3--; 
-        echo "<br> var 3 vale: " . $var;
+        echo "<br> var 3 vale: " . $var3;
     }
 
     $var3 = 8;

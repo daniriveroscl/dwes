@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Formulario Credenciales</h1>
+    
     <form name="miformu" action="autoriza.php" method="get"><!--Si ponemos en method "Get" en la url se vera el usuario y contraseña enviados-->
         <p>
             <label for="nombre">Introduce Nombre: </label>
