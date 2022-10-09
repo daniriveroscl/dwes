@@ -9,10 +9,10 @@
 <body>
     <?php
          if (isset($_POST['envio'])) { 
-            if (!empty($_POST['nombreobli'])) {
+            if (!empty($_POST['username'])) {
                 echo "<h1>Saludos";
             } 
         }
-    ?>
-</body>
+        ?>
+    </body>
 </html>

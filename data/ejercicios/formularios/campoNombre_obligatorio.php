@@ -15,7 +15,8 @@
     <form name="formuNombre" action="autoriza_nombre.php" method="post">
         <p>
             <label for="nombre">Introduce Nombre: </label>
-            <input type="text" name="nombreobli" id="nombreobli">
+            
+            <input type="text"  required="" name="username" placeholder="Aquí =)" oninvalid="this.setCustomValidity('Campo Obligatorio')">
         </p>
         <input type="submit" name="envio" id="envio" value="Enviar">
     </form>
