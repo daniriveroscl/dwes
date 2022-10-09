@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,7 +15,7 @@
 
     <h1>Formulario registro libro</h1>
 
-    <form name="formulibro" action="" method="get">
+    <form name="formulibro" action="autoriza_libro.php" method="post">
         <p>
             <label for="titulo">Introduce Título: </label>
             <input type="text" name="titulolibro" id="titulolibro">
@@ -35,6 +34,8 @@
             <label for="paginas">Introduce Número de Páginas: </label>
             <input type="number" name="numpaginas" id="numpaginas">
         </p>
+
+        <input type="submit" name="envio" id="envio" value="Enviar">
 
     </form>
 </body>
