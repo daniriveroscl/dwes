@@ -10,7 +10,7 @@ function inverso($num){
     return 1/$num;
 }
 
-//En try ponemos el codigo a evaluar
+//En try ponemos el codigo a evaluar (bloque problemático)
 try{
     echo "<br>El inverso del número 5 es: " . inverso(5);
 }catch(Exception $e){ // Trato la excepción y la meto en una variable. Solo hay exception en php
