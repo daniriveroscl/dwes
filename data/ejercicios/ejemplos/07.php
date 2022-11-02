@@ -7,7 +7,7 @@
 //inicializamos
 echo "Array ordenado inicializado en la declaración <hr>";
 $array1 = array (
-    'id' => 5,
+    'id' => 57,
     'nombre' => 'Manuel',
     'apellido' => 'García López',
     'edad' => 23
