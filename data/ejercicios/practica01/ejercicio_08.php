@@ -12,19 +12,20 @@
     $quinteto[]= "Andrew Bynum";
 
     echo "<h4>Indicando sólo los nombres</h4>";
-    $jugador1 = $quinteto[0];
+    $jugador1 = $quinteto[0]; // Cada jugador corresponde con una posición en el array.
     $jugador2 = $quinteto[1];
     $jugador3 = $quinteto[2];
     $jugador4 = $quinteto[3];
     $jugador5 = $quinteto[4];
-    echo "<ul>";
-        echo "<li>$jugador1</li>";
+    echo "<ul>"; // Mediante una lista desordenada
+        echo "<li>$jugador1</li>"; // Se muestra el elemento en cuestión.
         echo "<li>$jugador2</li>";
         echo "<li>$jugador3</li>";
         echo "<li>$jugador4</li>";
         echo "<li>$jugador5</li>";
     echo "</ul>";
 
+    // Forma más corta:
     echo "<h4>Indicando la posición del nombre en el array</h4>";
     echo "<ul>";
         echo "<li>$quinteto[0]</li>";

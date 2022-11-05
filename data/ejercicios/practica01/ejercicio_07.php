@@ -3,9 +3,10 @@
 
     echo "<h3>Recorrido Paises Favoritos</h3><hr>";
 
+    // Declaración de array
     $paises = ["Chile","España","Grecia","Japón"];
 
-    // Recorrido mediante bucle foreach simple
+    // Recorrido del array mediante bucle foreach simple, mostrando sus elementos.
     foreach ($paises as $element){
         echo $element . '<br><br>';
     }

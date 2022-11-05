@@ -8,7 +8,10 @@
  </head>
  <body>
  <!-- Crea un formulario para enviar los datos de registro 
-      de un libro: título, autor, editorial, páginas.  -->
+      de un libro: título, autor, editorial, páginas. -->
+
+      <!--Formulario que redirecciona a 11action.php mediante el método Post -->
+      <!--3 tipos de inputs: texto(text), número(number) y envío(submit)-->
       <form action="11action.php" method="post">
         <fieldset>    
             <legend><b>DATOS DE REGISTRO DE LIBRO</b></legend>
@@ -25,7 +28,7 @@
             <label for="paginas">Páginas</label>
             <input type="number" name="paginas"><br><br>
 
-            <input type="submit" value="Enviar Datos">
+            <input type="submit" value="Enviar Datos"> <!-- Botón para enviar los datos -->
         </p>
         </fieldset>
       </form>

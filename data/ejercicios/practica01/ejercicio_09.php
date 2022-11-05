@@ -5,12 +5,12 @@
 
     echo "<h4>Elementos o paises añadidos de uno en uno</h4>";
 
-    $paises[]= "Chile";
+    $paises[]= "Chile"; // Corresponde a la posición cero [0].
     $paises[]= "España";
     $paises[]= "Grecia";
     $paises[]= "Japón";
 
     // Recorrido mediante bucle foreach simple
     foreach ($paises as $element){
-        echo $element . '<br><br>';
+        echo $element . '<br><br>'; // Muestra de los elementos o paises.
     }

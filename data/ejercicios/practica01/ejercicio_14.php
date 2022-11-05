@@ -13,6 +13,8 @@
     Si se reciben los datos muestra el resultado.
     Si no son válidos o no existen debe mostrar de nuevo el formulario de calculadora.-->
 
+    <!--Formulario que se redirecciona a si mismo mediante el método Post -->
+    <!--2 tipos de inputs: número(number) y envío(submit)-->
     <form action="" method="post">
         <fieldset>
             <legend> <h3>Calculadora Online</h3> </legend>
@@ -23,7 +25,7 @@
             <input type="number" name="operando2"> &nbsp;
 
             <label for="operador">Operador: </label>
-            <select name="operador" id="operador">
+            <select name="operador" id="operador"> <!-- Lista desplegable simple. Solo se puede escoger una opción-->  
                 <option value="suma">+</option> <!--Opción por defecto-->
                 <option value="resta">-</option>
                 <option value="multiplicacion">*</option>
@@ -35,12 +37,13 @@
     </form>
 
     <?php
+        // Código PHP donde $_POST ["operando1"] !="" es equivalente a !empty($_POST)
        if ($_POST ["operando1"] !="" and $_POST ["operando2"]!=""){
-        $operador = $_POST["operador"];
+        $operador = $_POST["operador"]; // Creamos una variable mediante el array $_POST de "operador"
         if (!empty ($operador)) {
-            switch ($operador) {
+            switch ($operador) { //Switch case según el operador que se use.
                 case "suma":
-                    print("<br>El resultado de la suma es: <b>" . ($_POST ["operando1"] + $_POST ["operando2"]) . "</b>");
+                    print("<br>El resultado de la suma es: <b>" . ($_POST ["operando1"] + $_POST ["operando2"]) . "</b>"); // Muestra el resultado de la operación escogida
                     break;
                 case "resta":
                     echo("<br>El resultado de la resta es: <b>" . ($_POST ["operando1"] - $_POST ["operando2"]) . "</b>");
@@ -54,7 +57,7 @@
             }
         }
     } else {
-        echo("<br>&nbsp;Ingresa los valores");
+        echo("<br>&nbsp;Ingresa los valores"); // Mensaje de cuando aún no se ingresan valores.
     }
     ?>
 </body>
