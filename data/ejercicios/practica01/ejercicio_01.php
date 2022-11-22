@@ -8,6 +8,12 @@
 </head>
 <body>
     <?php 
+     /*Imprimir una ficha con tus datos personales guardados en variables (nombre, apellidos, edad, teléfono, email, ...). 
+       Hazlo usando una tabla html y cambiando de modo:
+
+        1- Con print y con echo
+        2- Con concatenando, usando dobles comillas y simples, ....*/
+ 
 
     // Variables de la tabla
       $nombre = "Daniel";

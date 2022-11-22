@@ -7,6 +7,6 @@
     $paises = ["Chile","España","Grecia","Japón"];
 
     // Recorrido del array mediante bucle foreach simple, mostrando sus elementos.
-    foreach ($paises as $element){
-        echo $element . '<br><br>';
+    foreach ($paises as $pais){
+        echo $pais . '<br><br>';
     }

@@ -11,6 +11,6 @@
     $paises[]= "Japón";
 
     // Recorrido mediante bucle foreach simple
-    foreach ($paises as $element){
-        echo $element . '<br><br>'; // Muestra de los elementos o paises.
+    foreach ($paises as $pais){
+        echo $pais . '<br><br>'; // Muestra de los elementos o paises.
     }

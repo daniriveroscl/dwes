@@ -18,6 +18,6 @@
 
     // Bucle foreach clave->elemento, en este caso posición => jugador.
     echo "<h4>Recorrido mediante bucle foreach con posicion->elemento</h4>";
-    foreach ($quinteto as $position=>$element){
-        echo $position . ": " . "<b>$element</b>" . '<br><br>'; // Muestra por pantalla
+    foreach ($quinteto as $posicion => $jugador){
+        echo $posicion . ": " . "<b>$jugador</b>" . '<br><br>'; // Muestra por pantalla
     }
