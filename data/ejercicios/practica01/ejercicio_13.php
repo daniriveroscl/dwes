@@ -27,8 +27,8 @@
      isset comprueba si una variable está definida y no es null
      empty comprueba si una variable contiene algún valor distinto de 0 o false -->
     <?php
-    if(isset($_POST) && !empty($_POST) && (strlen($_POST["nombre"])>=3)){ // strlen: longitud de la variable o input. En este caso mayor o igual a 3.
-        echo "<b>Saludos $_POST[nombre]"; // Coge el nombre de la variable 'nombre'.
+    if(isset($_POST["nombre"]) && !empty($_POST["nombre"]) && (strlen($_POST["nombre"])>=3)){ // strlen: longitud de la variable o input. 
+        echo "<b>Saludos $_POST[nombre]"; // Coge el nombre de la variable 'nombre'.                        (En este caso mayor o igual a 3)
     }
      else {
          echo "Esperando tu respuesta =)"; // Si todavía no se introduce nada en la página...

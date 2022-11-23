@@ -18,11 +18,9 @@
     <form action="" method="post">
         <fieldset>
             <legend> <h3>Calculadora Online</h3> </legend>
+
             <label for="operando1">Primer número: </label>
             <input type="number" name="operando1">
-
-            <label for="operando2">Segundo número: </label>
-            <input type="number" name="operando2"> &nbsp;
 
             <label for="operador">Operador: </label>
             <select name="operador" id="operador"> <!-- Lista desplegable simple. Solo se puede escoger una opción-->  
@@ -30,7 +28,10 @@
                 <option value="resta">-</option>
                 <option value="multiplicacion">*</option>
                 <option value="division">/</option>
-            </select>&nbsp;&nbsp;
+            </select>
+
+            <label for="operando2">Segundo número: </label>
+            <input type="number" name="operando2"> &nbsp;
             
             <input type="submit" value="Mostrar resultado">
         </fieldset>
@@ -38,26 +39,30 @@
 
     <?php
         // Código PHP donde $_POST ["operando1"] !="" es equivalente a !empty($_POST)
-       if ($_POST ["operando1"] !="" and $_POST ["operando2"]!=""){
+       if ($_POST ["operando1"] !="" && $_POST ["operando2"]!=""){
+
         $operador = $_POST["operador"]; // Creamos una variable mediante el array $_POST de "operador"
+        $operando1 = $_POST ["operando1"];
+        $operando2 = $_POST ["operando2"];
+
         if (!empty ($operador)) {
             switch ($operador) { //Switch case según el operador que se use.
                 case "suma":
-                    print("<br>El resultado de la suma es: <b>" . ($_POST ["operando1"] + $_POST ["operando2"]) . "</b>"); // Muestra el resultado de la operación escogida
+                    print("<br>El resultado de la suma es: <b>" . ($operando1 + $operando2) . "</b>"); // Muestra el resultado de la operación escogida
                     break;
                 case "resta":
-                    echo("<br>El resultado de la resta es: <b>" . ($_POST ["operando1"] - $_POST ["operando2"]) . "</b>");
+                    echo("<br>El resultado de la resta es: <b>" . ($operando1 - $operando2) . "</b>");
                     break;
                 case "multiplicacion":
-                    echo("<br>El resultado de la multiplicación es: <b>" . ($_POST ["operando1"] * $_POST ["operando2"]) . "</b>");
+                    echo("<br>El resultado de la multiplicación es: <b>" . ($operando1 * $operando2) . "</b>");
                     break;
                 case "division":
-                    echo("<br>El resultado de la división es: <b>" . ($_POST ["operando1"] / $_POST ["operando2"]) . "</b>");
+                    echo("<br>El resultado de la división es: <b>" . ($operando1 / $operando2) . "</b>");
                      break;
             }
         }
     } else {
-        echo("<br>&nbsp;Ingresa los valores"); // Mensaje de cuando aún no se ingresan valores.
+        echo("<br>&nbsp;<i>Ingresa los valores</i>"); // Mensaje de cuando aún no se ingresan valores.
     }
     ?>
 </body>

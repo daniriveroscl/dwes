@@ -31,11 +31,13 @@
      isset comprueba si una variable está definida y no es null
      empty comprueba si una variable contiene algún valor distinto de 0 o false -->
     <?php
-    if(isset($_POST) && !empty($_POST)){
+    if(isset($_POST["nombres"]) && !empty($_POST["nombres"])){
         echo "Listado de nombres: ";
-        foreach (($_POST["nombres"]) as $element){ // Bucle que muestra los nombres del array.
-            echo "<b>$element" . "&nbsp;" ;
+        foreach (($_POST["nombres"]) as $nombre){ // Bucle que muestra los nombres del array.
+            echo "<b>$nombre" . "&nbsp;" ;
         }
+    }else {
+        echo("Introduce los nombres");
     }
     ?>
 </body>

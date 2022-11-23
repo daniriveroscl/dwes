@@ -4,7 +4,7 @@
  
 // isset comprueba si una variable está definida y no es null
 // empty comprueba si una variable contiene algún valor distinto de 0 o false
-if(isset($_POST) && !empty($_POST)){
+if(isset($_POST["nombre"]) && !empty($_POST["nombre"])){
     echo "<h3>Saludos $_POST[nombre]";
 }
  else {
