@@ -12,7 +12,7 @@ class App {
     // Función run: obtendrá de la cabecera, con Get, el dato de la función a utilizar y lanzará la función llamada de esta misma clase
     // Por defecto, si no se le indica ninguna función, utilizará la función index()
     public function run(){
-      if (isset($_GET['method'])) {
+      if (isset($_GET['method'])){
         $method = $_GET['method'];
       } else {
         $method = "index";
